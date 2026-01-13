@@ -1,19 +1,22 @@
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class ProjectileScript : MonoBehaviour
 {
     public float speed;
-    private Rigidbody rb;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        transform.position += Vector3.back * speed * Time.deltaTime;
+
+        if (transform.position.z < -10)
+        {
+            Destroy(gameObject);
+        }
     }
 }
