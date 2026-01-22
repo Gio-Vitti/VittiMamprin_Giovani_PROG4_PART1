@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3138360041686552019}
   - component: {fileID: 1693590606472169544}
   - component: {fileID: 4319872588140800195}
+  - component: {fileID: 8215605742077199335}
   m_Layer: 0
   m_Name: Fruit
   m_TagString: Untagged
@@ -133,7 +134,8 @@ MonoBehaviour:
   _parentBlackboard: {fileID: 0}
   _serializedBlackboard: '{"_variables":{"timeLimit":{"_value":5.0,"_name":"timeLimit","_id":"62caee34-0968-40c8-b4eb-541068e1a353","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"expiryTimer":{"_name":"expiryTimer","_id":"b5f0741e-7b54-45ed-89ec-c1ac30557e00","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"employee":{"_name":"employee","_id":"f492e891-942a-4de1-b06c-6c40d8ff22cf","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
   _objectReferences: []
   _serializedVariables:
   - _json: '{"_value":5.0,"_name":"timeLimit","_id":"62caee34-0968-40c8-b4eb-541068e1a353","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
@@ -142,3 +144,27 @@ MonoBehaviour:
   - _json: '{"_name":"expiryTimer","_id":"b5f0741e-7b54-45ed-89ec-c1ac30557e00","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
+  - _json: '{"_name":"employee","_id":"f492e891-942a-4de1-b06c-6c40d8ff22cf","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+--- !u!65 &8215605742077199335
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3602025105080723502}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.6000004, y: 3.6000004, z: 3.1123786}
+  m_Center: {x: 0, y: 0, z: -1.4561898}
