@@ -136,7 +136,8 @@ MonoBehaviour:
   _serializedBlackboard: '{"_variables":{"timeLimit":{"_value":5.0,"_name":"timeLimit","_id":"62caee34-0968-40c8-b4eb-541068e1a353","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"expiryTimer":{"_name":"expiryTimer","_id":"b5f0741e-7b54-45ed-89ec-c1ac30557e00","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"employee":{"_name":"employee","_id":"f492e891-942a-4de1-b06c-6c40d8ff22cf","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"myBoolean":{"_name":"myBoolean","_id":"58769136-a3de-4414-80e8-3310a202c505","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences: []
   _serializedVariables:
   - _json: '{"_value":5.0,"_name":"timeLimit","_id":"62caee34-0968-40c8-b4eb-541068e1a353","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
@@ -147,6 +148,9 @@ MonoBehaviour:
     _references: []
   - _json: '{"_name":"employee","_id":"f492e891-942a-4de1-b06c-6c40d8ff22cf","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"myBoolean","_id":"58769136-a3de-4414-80e8-3310a202c505","$type":"NodeCanvas.Framework.Variable`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
 --- !u!65 &8215605742077199335
 BoxCollider:

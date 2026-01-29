@@ -9,8 +9,10 @@ namespace NodeCanvas.Tasks.Actions {
 
 		public BBParameter<float> expiryTimeBB;
 		public BBParameter<float> timeLimitBB;
+		public BBParameter<bool> IsSpoiled;
 		private SpriteRenderer sr;
 		private float c;
+		
 
 		//Use for initialization. This is called only once in the lifetime of the task.
 		//Return null if init was successfull. Return an error string otherwise
@@ -25,6 +27,7 @@ namespace NodeCanvas.Tasks.Actions {
 			
 			expiryTimeBB.value = timeLimitBB.value;
 			sr = agent.GetComponent<SpriteRenderer>();
+			IsSpoiled.value = false;
 
 		}
 
@@ -37,16 +40,6 @@ namespace NodeCanvas.Tasks.Actions {
 
 			//Change colour:
 			sr.color = new Color(c, c, c);
-			
-		}
-
-		//Called when the task is disabled.
-		protected override void OnStop() {
-			
-		}
-
-		//Called when the task is paused.
-		protected override void OnPause() {
 			
 		}
 	}
