@@ -13,7 +13,7 @@ namespace NodeCanvas.Tasks.Actions {
 		public BBParameter<float> sleepTimeBB;
 		public BBParameter<float> shiftTimerBB;
 		public BBParameter<float> shiftDurationBB;
-		public BBParameter<bool> isSleeping;
+	
 		public BBParameter<bool> isWorking;
 
 		//Use for initialization. This is called only once in the lifetime of the task.
@@ -26,7 +26,6 @@ namespace NodeCanvas.Tasks.Actions {
 		//Call EndAction() to mark the action as finished, either in success or failure.
 		//EndAction can be called from anywhere.
 		protected override void OnExecute() {
-			isSleeping.value = true;
 			isWorking.value = false;
 			agent.transform.eulerAngles = new Vector3 (90,0,0);
 			bed = GameObject.Instantiate(bed, new Vector3 (agent.transform.position.x, 0, agent.transform.position.z), Quaternion.identity);
@@ -49,6 +48,7 @@ namespace NodeCanvas.Tasks.Actions {
 		protected override void OnStop() {
 			agent.transform.eulerAngles = Vector3.zero;
 			shiftTimerBB.value = shiftDurationBB.value;
+			isWorking.value = true;
 		}
 
 		//Called when the task is paused.
